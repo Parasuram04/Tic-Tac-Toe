@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <nav>
+        <button class="bt opt selected" id="onePlayer">Single Player</button>
+        <button class="bt opt" id="twoPlayer">Two Players</button>
+    </nav>
+    <div class="board">
+        <div class="cell" data-index="0"></div>
+        <div class="cell" data-index="1"></div>
+        <div class="cell" data-index="2"></div>
+        <div class="cell" data-index="3"></div>
+        <div class="cell" data-index="4"></div>
+        <div class="cell" data-index="5"></div>
+        <div class="cell" data-index="6"></div>
+        <div class="cell" data-index="7"></div>
+        <div class="cell" data-index="8"></div>
+    </div>
+    <header>
+        <h1>Score</h1>
+    </header>
+    <div id="score">
+        <div class="score-container">
+            <div class="score-item">
+                <span class="player">X</span>
+                <span class="score" id="xScore">0</span>
+            </div>
+            <div class="score-divider">|</div>
+            <div class="score-item">
+                <span class="player">O</span>
+                <span class="score" id="oScore">0</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <button class="bt" id="reset">Reset</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
